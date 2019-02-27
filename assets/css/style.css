@@ -1,0 +1,197 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', sans-serif;
+    font-size: 18px;
+    line-height: 34px;
+    background-color: url("../images/concrete_seamless.png");
+    color: #777777;
+}
+
+h1,
+h2,
+    {
+    font-family: 'Georgia', sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    padding: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #336B87;
+}
+
+.header {
+    background: #ffffff;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #2A3132;
+    margin-bottom: 35px;
+}
+
+.header-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.masthead {
+    background: #336b87;
+    color: #ededed;
+    max-width: 250px;
+}
+
+.wrapper {
+    /* background: pink; */
+    padding-top: 1.5em;
+    text-align: center;
+    min-width: 250px;
+}
+
+nav {
+    font-size: 1.2em;
+    /* background: pink; */
+    text-align: right;
+}
+
+nav > li {
+    display: inline-block;
+    border-right: 1px solid #2A3132;
+    padding: 0.25em;
+}
+
+nav li:last-child {
+    border: 0;
+}
+
+.contact-info > a {
+    margin-right: 25px;
+    color: #ededed
+}
+
+.contact-info > a:last-child {
+    margin-right: 0;
+}
+
+/* 
+index.html
+-------------------*/
+
+.profile-image {
+    max-width: 200px;
+    float: left;
+    margin: 0.8em;
+}
+
+.main-section {
+    max-width: 960px;
+    margin: auto;
+    background: #ffffff;
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.main-section-header {
+    margin: 20px;
+}
+
+.about-me-text {
+    margin: 25px;
+}
+
+/* 
+contact.html
+------------------------*/
+
+.contact-form {
+    min-width: 960px;
+    max-width: 960px;
+}
+
+input, label {
+    margin: 20px;
+}
+
+input[type=text] {
+    width: 900px;
+}
+
+input[type=submit] {
+    color: #ededed;
+    background: #336B87;
+    border: 0;
+    /* padding: 12px; */
+    width: 100px;
+    height: 25px;
+}
+
+#message {
+    padding-bottom: 50px;
+}
+
+/* 
+portfolio.html 
+-----------------------*/
+
+.gallery-wrapper {
+    max-width: 960px;
+    min-width: 960px;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.gallery-item {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-plate {
+    background: #336B87;
+    color: #ededed;
+    text-align: center;
+    height: 2em;
+    position: relative;
+    bottom: 50px;
+}
+
+.portfolio-img {
+    width: 300px;
+}
+
+@media only screen and (min-width: 640px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: purple;
+    }
+}
+
+@media only screen and (min-width: 980px) {
+    body {
+        background-color: orange;
+    }
+}
